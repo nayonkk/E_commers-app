@@ -85,13 +85,17 @@ class login_page extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Get.defaultDialog(title: "PlZ Press Create account ",content: Row(children: [  
-   OutlinedButton(onPressed: (){
-    Get.back();
-   }, child: Text("Cancel"))
-
-
-                ],));
+                Get.defaultDialog(
+                    title: "PlZ Press Create account ",
+                    content: Row(
+                      children: [
+                        OutlinedButton(
+                            onPressed: () {
+                              Get.back();
+                            },
+                            child: Text("Cancel"))
+                      ],
+                    ));
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -145,9 +149,6 @@ class login_page extends StatelessWidget {
                 ],
               ),
             ),
-
-  
-
           ],
         ),
       ),
